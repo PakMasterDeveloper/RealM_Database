@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddDataActivity">
+
+    <EditText
+        android:id="@+id/IDText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:autofillHints="@null"
+        android:hint="@string/id"
+        android:inputType="text"
+        android:paddingStart="@dimen/_10sdp"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toTopOf="@id/NameText"
+        app:layout_constraintEnd_toStartOf="@id/myImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".5"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/NameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:autofillHints="@null"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:paddingStart="@dimen/_10sdp"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toTopOf="@id/AgeText"
+        app:layout_constraintEnd_toStartOf="@id/myImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IDText"
+        app:layout_constraintWidth_percent=".5"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/myImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:scaleType="centerCrop"
+        android:background="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/NameText"
+        app:layout_constraintBottom_toTopOf="@id/AgeText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/AgeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:autofillHints="@null"
+        android:hint="@string/myclass"
+        android:inputType="text"
+        android:paddingStart="@dimen/_10sdp"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toTopOf="@id/ClassText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NameText"
+        app:layout_constraintWidth_percent=".8"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/ClassText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:autofillHints="@null"
+        android:hint="@string/age"
+        android:inputType="text"
+        android:paddingStart="@dimen/_10sdp"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toTopOf="@id/InsertButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AgeText"
+        app:layout_constraintWidth_percent=".8"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/InsertButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/custom_button"
+        android:text="@string/insert_data"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ClassText"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintWidth_percent=".8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RealM</string>
+    <string name="save_data">Save Data</string>
+    <string name="age">Age</string>
+    <string name="name">Name</string>
+    <string name="id">ID</string>
+    <string name="insert_data">Insert Data</string>
+    <string name="myclass">CLass</string>
+    <string name="delete">Delete</string>
+
+</resources>
